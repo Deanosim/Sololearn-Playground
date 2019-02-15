@@ -3,14 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basic Calculator", "Basic Calculator\Basic Calculator.csproj", "{9D8B76A6-3562-4C02-99AA-17BBE30F1DE2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Basic Calculator", "Basic Calculator\Basic Calculator.csproj", "{9D8B76A6-3562-4C02-99AA-17BBE30F1DE2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		App|Any CPU = App|Any CPU
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9D8B76A6-3562-4C02-99AA-17BBE30F1DE2}.App|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D8B76A6-3562-4C02-99AA-17BBE30F1DE2}.App|Any CPU.Build.0 = Debug|Any CPU
 		{9D8B76A6-3562-4C02-99AA-17BBE30F1DE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9D8B76A6-3562-4C02-99AA-17BBE30F1DE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9D8B76A6-3562-4C02-99AA-17BBE30F1DE2}.Release|Any CPU.ActiveCfg = Release|Any CPU

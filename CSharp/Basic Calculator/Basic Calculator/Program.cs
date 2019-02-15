@@ -9,19 +9,42 @@ namespace Basic_Calculator
             do
             {
                 Console.WriteLine("Welcome to Dean's Calculator, Press enter to Continue or Exit to Quit.");
+
                 string str = Console.ReadLine();
+                string result = "Result = {0}";
+
+                char op;
                 int x;
+                int y;
+
                 if (str == "exit")
                     break;
                 else
+
+                Console.Write("Select Opterator (+, -, *, /) =");
+                op = Char.Parse(Console.ReadLine());
+
                 Console.Write("x =");
-                x = Convert.ToInt32(Console.ReadLine());
+                x = Int32.Parse(Console.ReadLine());
 
                 Console.Write("y =");
-                int y = Convert.ToInt32(Console.ReadLine());
+                y = Int32.Parse(Console.ReadLine());
 
-                int sum = y + x;
-                Console.WriteLine("Result: {0}", sum);
+                switch(op)
+                {
+                    case '+':
+                        Console.WriteLine(result, x + y);
+                        break;
+                    case '*':
+                        Console.WriteLine(result, x * y);
+                        break;
+                    case '-':
+                        Console.WriteLine(result, x - y);
+                        break;
+                    case '/':
+                        Console.WriteLine(result, x / y);
+                        break;
+                }
             }
             while (true);
         }
